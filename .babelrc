@@ -1,0 +1,17 @@
+{
+  "env": {
+    "production": {
+      "minified": true,
+      "comments": false
+    }
+  },
+  "presets": [
+    "flow",
+    ["env", {
+      "targets": {
+        "node": 9
+      }
+    }]
+  ]
+}
+

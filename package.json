@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "ioredis": "^3.2.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0"
+  }
+}
