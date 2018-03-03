@@ -4,7 +4,7 @@ import Redis from 'ioredis';
 import path from 'path';
 import addDefaultScriptsToRedis from 'ioredis-utils/extras/scripts';
 
-import RedisCommands from './commands';
+// import RedisCommands from './commands';
 
 export type RChan$Descriptor = {
   config: Redis$Options,
@@ -78,7 +78,7 @@ function createRedisChannel(
       config,
       tx,
       rx,
-      command: new RedisCommands({ config, tx, rx }),
+      // command: new RedisCommands({ config, tx, rx }),
     };
 
     CHANNELS.set(id, descriptor);

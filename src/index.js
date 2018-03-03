@@ -27,8 +27,8 @@ function tryStringify(payload) {
   }
 }
 
-function handleReceiveMessage(channelID, payload) {
-  const payload = tryParse(payload);
+function handleReceiveMessage(channelID, _payload) {
+  const payload = tryParse(_payload);
   console.log(
     `
     -------- ${channelID} --------
@@ -46,7 +46,7 @@ function sendMessage(_payload) {
 }
 
 function startApplication() {
-  console.log('Creating Redis Channel');
+  console.log('Creating Redis Channel\n', redisConfig);
   chan = createRedisChannel(channelID, redisConfig);
 
   console.log('Setting up Event Callbacks');
@@ -56,3 +56,5 @@ function startApplication() {
   console.log('Subscribing to Channel "foo:bar"');
   chan.rx.subscribe(channelID);
 }
+
+startApplication();

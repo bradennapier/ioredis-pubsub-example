@@ -7,11 +7,14 @@
   },
   "presets": [
     "flow",
-    ["env", {
-      "targets": {
-        "node": 9
+    [
+      "env",
+      {
+        "targets": {
+          "node": 8
+        }
       }
-    }]
-  ]
+    ]
+  ],
+  "plugins": ["transform-object-rest-spread"]
 }
-

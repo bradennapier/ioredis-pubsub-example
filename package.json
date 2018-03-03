@@ -1,11 +1,16 @@
 {
+  "scripts": {
+    "start": "babel-node ./src/index"
+  },
   "dependencies": {
     "app-module-path": "^2.2.0",
-    "ioredis": "^3.2.2"
+    "ioredis": "^3.2.2",
+    "ioredis-utils": "^1.5.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0"
   }
